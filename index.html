@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Metzgerei Küpper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+	  font-family: 'Amatic SC', sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+	  top: 0;
+	  position: fixed;
+	  width: 100%;
+	  z-index: 1;
+	  box-sizing: inherit;
+	  font-size: 15px;
+	  line-height: 1.5;
+	  color: #fff;
+	  background-color: #000;
+	  font-size: 24px;
+	  opacity: 0.60;
+	  width: 100%;
+	  overflow: hidden;
+	  box-sizing: inherit;
+	  line-height: 1.5;
+    }
+
+    .navbar a {
+	  padding: 8px 16px;
+	  float: left;
+	  width: auto;
+	  border: none;
+	  display: block;
+	  outline: 0;
+	  white-space: normal;
+	  overflow: hidden;
+	  text-decoration: none;
+	  color: inherit;
+	  background-color: inherit;
+	  text-align: center;
+	  cursor: pointer;
+	  box-sizing: inherit;
+	  font-size: 24px;
+	  line-height: 1.5;
+    }
+	
+	.navbar:hover {
+	  background-color: #000;
+	  opacity: 1;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+	
+	.fade-in {
+	  opacity: 0;
+	  transform: translateY(20px);
+	  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	}
+
+
+    /* Background Image for Header */
+    .bgimg {
+      background-image: url("laden.jpg"); /* Add path to your building image */
+      background-size: cover;
+      background-position: center;
+	  background-color: ##ae3030;
+      min-height: 90vh;
+      position: relative;
+    }
+
+    .bgimg .centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 70px;
+      text-align: center;
+    }
+
+    /* Home Section */
+    .section {
+      padding: 64px 20px;
+    }
+
+    .section.light {
+      color: #000;
+	  background-color: #f1f1f1;
+    }
+	
+    .section.black {
+      background-color: #000;
+	  color: white;
+    }
+
+    .section.red {
+      background-color: #f44336;
+      color: white;
+    }
+	
+	.section.grey {
+      background-color: #607d8b;
+      color: white;
+    }
+	
+	.grayscale {
+		filter: grayscale(50%);
+	}
+
+    .section h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .section p {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    .section img {
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 20px;
+    }
+
+    /* Angebote Section */
+    ul {
+      font-size: 24px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 20px;
+    }
+
+    ul li a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+    }
+
+    .contact-info div {
+      flex: 1;
+      margin: 10px;
+    }
+
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 48px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="#home">HOME</a>
+  <a href="#angebote">ANGEBOTE</a>
+  <a href="#about">ÜBER UNS</a>
+  <a href="#kontakt">KONTAKT</a>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg" id="home">
+  <div class="centered-text">
+    Metzgerei Küpper
+  </div>
+</header>
+
+<!-- Home Section -->
+<div class="section light fade-in" id="home">
+  <div class="content">
+    <h1>Willkommen!</h1>
+    <div class="row">
+      <div class="column fade-in">
+		<img src="haus.jpg" alt="Gebäude" class="effect-img slide-up">
+        <p>Als moderner Fleischereibetrieb mit Tradition bieten wir Ihnen ausgesuchte Fleisch- und Wurstspezialitäten aus eigener Herstellung. Beilagen, Gewürze und vieles mehr stehen Ihnen bei Metzgerei Küpper außerdem zur Verfügung.
+          <br/>
+          <br/>
+          Auf den folgenden Seiten finden Sie nähere Informationen zu unserem Betrieb. Kommen Sie doch einfach mal vorbei und überzeugen Sie sich vor Ort von der hohen Qualität, der Frische und dem hervorragendem Geschmack unserer Produkte. Wir freuen uns auf Sie!
+          Qualität, Frische und Geschmack sind in unserem Fleischereibetrieb die wichtigsten Grundregeln. Mit großer Sorgfalt und höchsten Ansprüchen produzieren wir unsere Fleischprodukte. Wir legen bei unserem Sortiment großen Wert auf die Auswahl unserer Waren, auf Herstellungsort zum Beispiel das Bergische Land, sowie auf die Fütterung mit hofeigenem Futter und artgerechter Haltung der Tiere.
+          <br/>
+          <br/>
+          Täglich frisch produzierte Wurst aus unserer eigenen Herstellung, bieten wir Ihnen schon seit Jahrzehnten an. In den Jahren haben wir dafür gesorgt, dass unsere traditionellen Rezepte bei der Wurstverarbeitung immer erhalten und kaum geändert wurden. Wir verwenden keine Füllstoffe, Milchzucker, Getreideeiweiße oder Haltbarkeitsmittel.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Angebote Section -->
+<div class="section red grayscale fade-in" id="angebote">
+  <div class="content fade-in">
+    <h1>Angebote</h1>
+    <ul>
+      <li>vom 23.09. - 28.09. <a href="flyer1.pdf">Flyer herunterladen</a></li>
+      <li>vom 30.09. - 05.10. <a href="flyer2.pdf">Flyer herunterladen</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="section light fade-in" id="about">
+  <div class="content fade-in">
+		<h1>Über Uns</h1>
+		<img src="laden.jpg" alt="Theke" class="effect-img slide-up">
+		<p>Wir sind ein Fleischereibetrieb mit langjähriger Erfahrung und dem Bewusstsein für unsere Verantwortung. Die hohe Qualität, Frische sowie der leckere Geschmack unserer Fleischereierzeugnisse sorgen dafür, dass Sie bei uns Lebensmittel bekommen, die zu Ihrer ausgewogenen und schmackhaften Ernährung beitragen. Unserer Verantwortung gegenüber den Tieren tragen wir durch die ständige Überprüfung der Herkunft und artgerechten Haltung Rechnung. In unserem Fachgeschäft beraten wir Sie gerne und geben Ihnen Tipps zur richtigen Zubereitung der Produkte. Wie machen Sie einen appetitlichen Schweine- oder Rinderbraten, wie werden Rouladen richtig zart? Wir haben die Antwort, kommen Sie einfach vorbei!</p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="section grey grayscale fade-in" id="kontakt">
+  <div class="content fade-in">
+		<h1>Kontakt</h1>
+		<p>Haben Sie Fragen oder Anregungen? Nehmen Sie Kontakt auf, wir helfen Ihnen gerne weiter.</p>
+		<div class="contact-info">
+		  <div>
+			<strong>Metzgerei Küpper</strong><br>
+			<p>Honsberger Str. 12, 42857 Remscheid</p>
+		  </div>
+		  <div>
+			<p>Telefon: +49(0)2191/349155<br>
+			Fax: +49(0)2191/4222911<br>
+			E-Mail: oliver-kuepper@gmx.de</p>
+		  </div>
+		  <div>
+			<strong>Öffnungszeiten:</strong><br>
+			<p>
+			Mo: Geschlossen<br>
+			Di, Do: 8:00 - 12:30, 14:30 - 18:00<br>
+			Mi: 8:00 - 12:30<br>
+			Fr: 8:00 - 18:00<br>
+			Sa: 7:30 - 13:00<br>
+			So: Geschlossen</p>
+		  </div>
+		</div>
+		<p><strong>Bitte Bestellungen nur telefonisch!</strong></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Metzgerei Küpper</p>
+    <a href="impressum.html">Impressum</a>
+</footer>
+
+    <!-- JavaScript for Scroll Effects -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
