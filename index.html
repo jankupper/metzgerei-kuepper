@@ -163,13 +163,27 @@
   /* Contact Section */
   .contact-info {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Abstand zwischen den Kontaktinformationen und Öffnungszeiten */
     justify-content: space-between;
-    font-size: 20px;
   }
 
   .contact-info div {
     flex: 1;
     margin: 10px;
+  }
+
+  .contact-item {
+    flex: 1 1 300px; /* Mindestbreite für jedes Element, um nebeneinander zu stehen */
+    max-width: 500px; /* Maximale Breite für bessere Lesbarkeit */
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 650px) {
+    .contact-info {
+      flex-direction: column;
+      /* align-items: center; */
+    }
   }
 
   /* Footer Styling */
@@ -254,14 +268,14 @@
     <h1>Angebote</h1>
     <div class="angebote-container">
       <div class="angebot-item">
-        <p><strong>vom 23.09. - 28.09.</strong></p>
-        <img src="Die-Angebote-vom-23.09.-28.09..jpg" class="effect-img slide-up">
-        <p><a href="flyer1.pdf" class="button">Flyer herunterladen</a></p>
+        <p><strong>vom 30.09. - 05.10.</strong></p>
+        <img src="Die_Angebote_vom_30.09.-05.10..jpg" class="effect-img slide-up">
+        <p><a href="Die_Angebote_vom_30.09._-_05.10.24.pdf" class="button">Flyer herunterladen</a></p>
       </div>
       <div class="angebot-item">
-        <p><strong>vom 30.09. - 05.10.</strong></p>
-        <img src="Die-Angebote-vom-30.09.-05.10..jpg" class="effect-img slide-up">
-        <p><a href="flyer2.pdf" class="button">Flyer herunterladen</a></p>
+        <p><strong>vom 07.10. - 12.10.</strong></p>
+        <img src="Die_Angebote_vom_07.10.-12.10..jpg" class="effect-img slide-up">
+        <p><a href="Die_Angebote_vom_07.10._-_12.10.24.pdf" class="button">Flyer herunterladen</a></p>
       </div>
     </div>
   </div>
@@ -281,27 +295,28 @@
 <!-- Contact Section -->
 <div class="section grey fade-in" id="kontakt">
   <div class="content fade-in">
-		<h1>Kontakt</h1>
-		<div class="contact-info">
-		  <div>
+    <h1>Kontakt</h1>
+    <div class="contact-info">
+      <div class="contact-item">
         <p><strong>Metzgerei Küpper</strong></p>
         <p>Honsberger Str. 12, 42857 Remscheid</p>
         <p>Telefon: +49(0)2191/349155<br>
           Fax: +49(0)2191/4222911<br>
           E-Mail: oliver-kuepper@gmx.de</p>
-          <p><strong>Bitte Bestellungen nur telefonisch!</strong></p>
-		  </div>
-		  <div>
+        <p><strong>Bitte Bestellungen nur telefonisch!</strong></p>
+      </div>
+      <div class="contact-item">
         <p><strong>Öffnungszeiten:</strong></p>
-			<p>
-			Mo: Geschlossen<br>
-			Di, Do: 8:00 - 12:30, 14:30 - 18:00<br>
-			Mi: 8:00 - 12:30<br>
-			Fr: 8:00 - 18:00<br>
-			Sa: 7:30 - 13:00<br>
-			So: Geschlossen</p>
-		  </div>
-		</div>
+        <p>
+          Mo: Geschlossen<br>
+          Di, Do: 8:00 - 12:30, 14:30 - 18:00<br>
+          Mi: 8:00 - 12:30<br>
+          Fr: 8:00 - 18:00<br>
+          Sa: 7:30 - 13:00<br>
+          So: Geschlossen
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
