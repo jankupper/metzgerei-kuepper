@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       height: 100%;
-	  font-family: 'Amatic SC', sans-serif;
+	    font-family: 'Amatic SC', sans-serif;
       background-color: #f0f0f0;
     }
 
@@ -68,121 +68,145 @@
 	}
 
 
-    /* Background Image for Header */
-    .bgimg {
-      background-image: url("laden.jpg"); /* Add path to your building image */
-      background-size: cover;
-      background-position: center;
-	  background-color: ##ae3030;
-      min-height: 90vh;
-      position: relative;
-    }
+  /* Background Image for Header */
+  .bgimg {
+    background-image: url("titel.jpg"); /* Add path to your building image */
+    background-size: cover;
+    background-position: center;
+  background-color: ##ae3030;
+    min-height: 90vh;
+    position: relative;
+  }
 
-    .bgimg .centered-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 70px;
-      text-align: center;
-    }
+  .bgimg .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    text-align: center;
+  }
 
-    /* Home Section */
-    .section {
-      padding: 64px 20px;
-    }
+  /* Home Section */
+  .section {
+    padding: 64px 20px;
+  }
 
-    .section.light {
-      color: #000;
-	  background-color: #f1f1f1;
-    }
-	
-    .section.black {
-      background-color: #000;
-	  color: white;
-    }
+  .section.light {
+    color: #000;
+  background-color: #f1f1f1;
+  }
 
-    .section.red {
-      background-color: #f44336;
-      color: white;
-    }
-	
-	.section.grey {
-      background-color: #607d8b;
-      color: white;
-    }
-	
-	.grayscale {
-		filter: grayscale(50%);
-	}
+  .section.black {
+    background-color: #000;
+  color: white;
+  }
 
-    .section h1 {
-      text-align: center;
-      font-size: 48px;
-      margin-bottom: 40px;
-    }
+  .section.red {
+    background-color: #ae554f;
+    color: white;
+  }
 
-    .section p {
-      font-size: 24px;
-      line-height: 1.5;
-    }
+.section.grey {
+    background-color: #6c7a81;
+    color: white;
+  }
 
-    .section img {
-      width: 100%;
-      height: auto;
-    }
+  .section h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
 
-    .content {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+  .section p {
+    font-size: 24px;
+    line-height: 1.5;
+  }
 
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  /* .section img {
+    width: 100%;
+    height: auto;
+  } */
 
-    .column {
-      flex: 50%;
-      padding: 20px;
-    }
+  .content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
-    /* Angebote Section */
-    ul {
-      font-size: 24px;
-      list-style-type: none;
-      padding: 0;
-    }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    ul li {
-      margin-bottom: 20px;
-    }
+  .column {
+    flex: 50%;
+    padding: 20px;
+  }
 
-    ul li a {
-      color: white;
-      text-decoration: underline;
-    }
+  /* Angebote Section */
+  ul {
+    font-size: 24px;
+    list-style-type: none;
+    padding: 0;
+  }
 
-    /* Contact Section */
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
-      font-size: 20px;
-    }
+  ul li {
+    margin-bottom: 20px;
+  }
 
-    .contact-info div {
-      flex: 1;
-      margin: 10px;
-    }
+  ul li a {
+    color: white;
+    text-decoration: underline;
+  }
 
-    /* Footer Styling */
-    footer {
-      text-align: center;
-      background-color: black;
-      color: white;
-      padding: 48px 0;
-    }
+  /* Contact Section */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .contact-info div {
+    flex: 1;
+    margin: 10px;
+  }
+
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 48px 0;
+  }
+
+  .angebote-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Abstand zwischen den Angeboten */
+  }
+
+  .angebot-item {
+    flex: 1 1 calc(50% - 40px); /* Jedes Angebot nimmt die Hälfte des verfügbaren Platzes */
+    max-width: 400px; /* Maximalbreite für jedes Angebot */
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #5e5e5e; /* Rote Farbe passend zu deiner Präferenz */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #000000; /* Dunkleres Rot für Hover-Effekt */
+  }
 
   </style>
 </head>
@@ -199,7 +223,7 @@
 <!-- Header with image -->
 <header class="bgimg" id="home">
   <div class="centered-text">
-    Metzgerei Küpper
+    <img src="logo.png" alt="Gebäude" style="width: 110%">
   </div>
 </header>
 
@@ -209,8 +233,9 @@
     <h1>Willkommen!</h1>
     <div class="row">
       <div class="column fade-in">
-		<img src="haus.jpg" alt="Gebäude" class="effect-img slide-up">
-        <p>Als moderner Fleischereibetrieb mit Tradition bieten wir Ihnen ausgesuchte Fleisch- und Wurstspezialitäten aus eigener Herstellung. Beilagen, Gewürze und vieles mehr stehen Ihnen bei Metzgerei Küpper außerdem zur Verfügung.
+        <p>
+          <img src="haus.jpg" alt="Gebäude" class="effect-img slide-up" style="float: left; margin-right: 15px; width: 100%; max-width: 480px;">
+          Als moderner Fleischereibetrieb mit Tradition bieten wir Ihnen ausgesuchte Fleisch- und Wurstspezialitäten aus eigener Herstellung. Beilagen, Gewürze und vieles mehr stehen Ihnen bei Metzgerei Küpper außerdem zur Verfügung.
           <br/>
           <br/>
           Auf den folgenden Seiten finden Sie nähere Informationen zu unserem Betrieb. Kommen Sie doch einfach mal vorbei und überzeugen Sie sich vor Ort von der hohen Qualität, der Frische und dem hervorragendem Geschmack unserer Produkte. Wir freuen uns auf Sie!
@@ -224,42 +249,50 @@
 </div>
 
 <!-- Angebote Section -->
-<div class="section red grayscale fade-in" id="angebote">
+<div class="section red fade-in" id="angebote">
   <div class="content fade-in">
     <h1>Angebote</h1>
-    <ul>
-      <li>vom 23.09. - 28.09. <a href="flyer1.pdf">Flyer herunterladen</a></li>
-      <li>vom 30.09. - 05.10. <a href="flyer2.pdf">Flyer herunterladen</a></li>
-    </ul>
+    <div class="angebote-container">
+      <div class="angebot-item">
+        <p><strong>vom 23.09. - 28.09.</strong></p>
+        <img src="Die-Angebote-vom-23.09.-28.09..jpg" class="effect-img slide-up">
+        <p><a href="flyer1.pdf" class="button">Flyer herunterladen</a></p>
+      </div>
+      <div class="angebot-item">
+        <p><strong>vom 30.09. - 05.10.</strong></p>
+        <img src="Die-Angebote-vom-30.09.-05.10..jpg" class="effect-img slide-up">
+        <p><a href="flyer2.pdf" class="button">Flyer herunterladen</a></p>
+      </div>
+    </div>
   </div>
 </div>
+
 
 <!-- About Section -->
 <div class="section light fade-in" id="about">
   <div class="content fade-in">
 		<h1>Über Uns</h1>
-		<img src="laden.jpg" alt="Theke" class="effect-img slide-up">
-		<p>Wir sind ein Fleischereibetrieb mit langjähriger Erfahrung und dem Bewusstsein für unsere Verantwortung. Die hohe Qualität, Frische sowie der leckere Geschmack unserer Fleischereierzeugnisse sorgen dafür, dass Sie bei uns Lebensmittel bekommen, die zu Ihrer ausgewogenen und schmackhaften Ernährung beitragen. Unserer Verantwortung gegenüber den Tieren tragen wir durch die ständige Überprüfung der Herkunft und artgerechten Haltung Rechnung. In unserem Fachgeschäft beraten wir Sie gerne und geben Ihnen Tipps zur richtigen Zubereitung der Produkte. Wie machen Sie einen appetitlichen Schweine- oder Rinderbraten, wie werden Rouladen richtig zart? Wir haben die Antwort, kommen Sie einfach vorbei!</p>
+		<p>
+      <img src="laden.jpg" alt="Theke" class="effect-img slide-up" style="float: left; margin-right: 15px; width: 100%; max-width: 480px;">
+      Wir sind ein Fleischereibetrieb mit langjähriger Erfahrung und dem Bewusstsein für unsere Verantwortung. Die hohe Qualität, Frische sowie der leckere Geschmack unserer Fleischereierzeugnisse sorgen dafür, dass Sie bei uns Lebensmittel bekommen, die zu Ihrer ausgewogenen und schmackhaften Ernährung beitragen. Unserer Verantwortung gegenüber den Tieren tragen wir durch die ständige Überprüfung der Herkunft und artgerechten Haltung Rechnung. In unserem Fachgeschäft beraten wir Sie gerne und geben Ihnen Tipps zur richtigen Zubereitung der Produkte. Wie machen Sie einen appetitlichen Schweine- oder Rinderbraten, wie werden Rouladen richtig zart? Wir haben die Antwort, kommen Sie einfach vorbei!</p>
   </div>
 </div>
 
 <!-- Contact Section -->
-<div class="section grey grayscale fade-in" id="kontakt">
+<div class="section grey fade-in" id="kontakt">
   <div class="content fade-in">
 		<h1>Kontakt</h1>
-		<p>Haben Sie Fragen oder Anregungen? Nehmen Sie Kontakt auf, wir helfen Ihnen gerne weiter.</p>
 		<div class="contact-info">
 		  <div>
-			<strong>Metzgerei Küpper</strong><br>
-			<p>Honsberger Str. 12, 42857 Remscheid</p>
+        <p><strong>Metzgerei Küpper</strong></p>
+        <p>Honsberger Str. 12, 42857 Remscheid</p>
+        <p>Telefon: +49(0)2191/349155<br>
+          Fax: +49(0)2191/4222911<br>
+          E-Mail: oliver-kuepper@gmx.de</p>
+          <p><strong>Bitte Bestellungen nur telefonisch!</strong></p>
 		  </div>
 		  <div>
-			<p>Telefon: +49(0)2191/349155<br>
-			Fax: +49(0)2191/4222911<br>
-			E-Mail: oliver-kuepper@gmx.de</p>
-		  </div>
-		  <div>
-			<strong>Öffnungszeiten:</strong><br>
+        <p><strong>Öffnungszeiten:</strong></p>
 			<p>
 			Mo: Geschlossen<br>
 			Di, Do: 8:00 - 12:30, 14:30 - 18:00<br>
@@ -269,7 +302,6 @@
 			So: Geschlossen</p>
 		  </div>
 		</div>
-		<p><strong>Bitte Bestellungen nur telefonisch!</strong></p>
   </div>
 </div>
 
