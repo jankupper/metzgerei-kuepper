@@ -19,3 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Trigger the scroll event once to check elements on page load
   handleScroll();
 });
+
+function closeOverlay() {
+  document.getElementById("overlay").style.display = "none";
+}

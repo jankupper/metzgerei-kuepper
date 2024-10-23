@@ -222,9 +222,57 @@
     background-color: #000000; /* Dunkleres Rot für Hover-Effekt */
   }
 
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay-content {
+    display: flex;
+    max-width: 90%;
+    max-height: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .overlay img {
+    height: 100%;
+    margin: auto;
+  }
+
+  /* Close button */
+  .close-overlay {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 100px;
+    margin: 20px auto;
+  }
+
+  .close-overlay:hover {
+    background-color: #ddd;
+  }
   </style>
 </head>
 <body>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <img src="ueber_125_jahre_tradition_enden.jpg">
+      <button class="close-overlay" onclick="closeOverlay()">Schließen</button>
+    </div>
+  </div>
+  
 
 <!-- Navbar -->
 <div class="navbar">
@@ -246,7 +294,7 @@
   <div class="content">
     <h1>Willkommen!</h1>
     <div class="row">
-      <div class="column fade-in">
+      <div class="column fade-in" style="display: flex; flex-direction: column;">
         <p>
           <img src="haus.jpg" alt="Gebäude" class="effect-img slide-up" style="float: left; margin-right: 15px; width: 100%; max-width: 480px;">
           Als moderner Fleischereibetrieb mit Tradition bieten wir Ihnen ausgesuchte Fleisch- und Wurstspezialitäten aus eigener Herstellung. Beilagen, Gewürze und vieles mehr stehen Ihnen bei Metzgerei Küpper außerdem zur Verfügung.
@@ -257,6 +305,8 @@
           <br/>
           <br/>
           Täglich frisch produzierte Wurst aus unserer eigenen Herstellung, bieten wir Ihnen schon seit Jahrzehnten an. In den Jahren haben wir dafür gesorgt, dass unsere traditionellen Rezepte bei der Wurstverarbeitung immer erhalten und kaum geändert wurden. Wir verwenden keine Füllstoffe, Milchzucker, Getreideeiweiße oder Haltbarkeitsmittel.</p>
+        </p>
+        <img src="ueber_125_jahre_tradition_enden.jpg" class="effect-img slide-up" style="margin: 0 auto; width: 100%; max-width: 480px;">
       </div>
     </div>
   </div>
